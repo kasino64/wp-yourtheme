@@ -1,0 +1,16 @@
+{
+  "name": "yourtheme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp build-css",
+    "dev": "gulp watch-css"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "vanilla-framework": "^2.33.1"
+  }
+}

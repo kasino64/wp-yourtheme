@@ -1,0 +1,108 @@
+//Menu
+.menu{
+  li{
+    display: inline;
+    a{
+      &:hover{
+        text-decoration: none!important;
+      }
+    }
+  }
+}
+
+//Header
+header {
+  border-bottom: 3px solid $top-border-color;
+  border-top: 20px solid $border-page-color;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 99999;
+    padding-top: 1.5rem;
+    top: 0;
+
+  .site-branding a{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: $dark-color;
+  }
+  .main-navigation{
+    ul 
+    {
+      margin-left: 0px;
+      li {
+        padding:0px 10px;
+        a{
+          color: $light-color;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        &.active{
+          border-bottom: 4px solid #d2b356;
+          padding-bottom: 1.5rem;
+          a{
+            color:#d2b356;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-redes-sociais-container{
+  a{
+    &::after {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: inline-flex;
+      height:12px;
+      transition: background-image 0.2s ease-in-out;
+      width: 25px;
+      background-position: bottom;
+    }
+    span{
+      display: none;
+    }
+
+    &.icon{
+      &-facebook {
+        &::after {
+          @include background-svg(#{svg-fill($facebook, $light-color)) });
+        }
+      }
+
+      &-google {
+        &::after {
+          @include background-svg(#{svg-fill($google, $light-color))});
+        }
+      }
+
+      &-twitter {
+        &::after {
+          @include background-svg(#{svg-fill($twitter, $light-color))});
+        }
+      }
+
+      &-instagram {
+        &::after {
+          @include background-svg(#{svg-fill($instagram, $light-color))});
+        }
+      }
+
+      &-behance {
+        &::after {
+          @include background-svg(#{svg-fill($behance, $light-color))});
+        }
+      }
+    }  
+  }
+}

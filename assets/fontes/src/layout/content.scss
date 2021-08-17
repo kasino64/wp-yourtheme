@@ -1,0 +1,157 @@
+//section banner
+.banner{
+  position: relative;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+
+  .row{
+    height:100%;
+  }
+  .banner-content{
+    display: flex;
+    align-items: center;
+
+    h1{
+      margin-top:2rem;
+    }
+
+    p{
+      margin-bottom:2rem;
+    }
+
+    button{
+      margin-top:4rem;
+      margin-bottom: 0px;
+    }
+ 
+    .banner-text{
+      width:40%;
+    }
+  }
+  
+}
+
+
+//section myskills
+.my-skils{
+  margin-top: 9rem;
+  .my-skils-name{
+    h2{
+      max-width: 90%;
+    }
+    p.description{
+      color:$light-color;
+      margin-top: 1.5rem;
+    }
+  }
+
+  ul{
+    li{
+      display:block;
+      float: left;
+      margin-right: 5%;
+      width: 45%; 
+      height: 12rem;
+      margin-bottom: 3rem;
+      h4{
+        margin-bottom:0px;
+      }  
+
+      img{
+        height:30px;
+        width:auto;
+      }
+
+    }
+
+
+  }
+}
+
+//section gallery
+.gallery{
+  margin-top: 9rem;
+}
+
+//section my services
+.my-services{
+  margin-top: 9rem;
+
+  .message{
+    p{
+      text-align: right;
+    }
+  }
+
+  p.sub-title{
+    margin-top: 1.5rem;
+  }
+}
+
+//section opninions
+.opinions{
+  margin-top: 9rem;
+
+  .row .col-4{
+    text-align: center;
+  }
+
+  
+
+  .review{
+    .col-4{
+      padding-left:1rem;
+      padding-right:1rem;
+    }
+    hr{
+      height: 4px;
+    }
+    p.author{
+      color:$dark-color;
+      font-weight: 500;
+    }
+  }
+
+  img{
+    border-radius: 50%;
+    height: 8rem;
+  }
+}
+
+//section clients
+.clients{
+  margin-top:9rem;
+  p.description{
+    color:$light-color;
+    margin-top: 1.5rem;
+  }
+
+  #clients-gallery{
+    .ug-thumb-wrapper.ug-tile.ug-thumb-ratio-set{
+      background-color: #fff!important;
+     
+    }
+    img{
+      background-color: #fff;
+      width: 65%!important;
+      height: auto!important;
+      margin: auto!important;
+      top: 0px!important;
+      bottom: 0px!important;
+      left: 0px!important;
+      right: 0px!important;
+    }
+  }
+  ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+
+    li{
+      padding: 20px;
+      text-align: center;
+    }
+  }
+}

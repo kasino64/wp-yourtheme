@@ -1,0 +1,61 @@
+footer{
+  background-color:$footer-bg;
+  padding-top:4rem;
+  padding-bottom:6rem;
+  margin-top:5rem;
+  form{
+    background-color:#ffff;
+    padding:2rem;
+    p{
+      margin-bottom: 0px;
+    }
+    label{
+      color:$custom-color;
+      &.error{
+        color:#ff0000;
+      }
+    }
+
+
+    input, textarea{
+      border:1px solid $input-border!important;
+      border-radius: 2px!important;
+
+      &.error {
+        margin-bottom: 0px;
+      }
+
+      ::placeholder {
+        color: $light-color;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: $light-color;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+       color: $light-color;
+      }
+
+    }
+
+     
+  }
+}
+
+.author{
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  .name{
+    line-height: 1rem;
+    margin: 0;
+  }
+
+  .menu-redes-sociais-container{
+    float: right;
+    .menu{
+      margin-bottom: 0px;
+    }
+  }
+}

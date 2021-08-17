@@ -1,0 +1,15 @@
+@import "../node_modules/vanilla-framework/scss/vanilla";
+@include vanilla;
+
+// Abstracts or utilities
+@import 'abstract/variables';
+@import 'abstract/icons_svg';
+
+//Theme
+@import 'theme/yourtheme';
+
+
+// Layout
+@import 'layout/header'; 
+@import 'layout/content'; 
+@import 'layout/footer'; 
